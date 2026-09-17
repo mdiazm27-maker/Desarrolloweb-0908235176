@@ -1,0 +1,3 @@
+Documentación de solución Hotfix
+
+Este archivo fue creado en la rama hotfix/ramas-github.
