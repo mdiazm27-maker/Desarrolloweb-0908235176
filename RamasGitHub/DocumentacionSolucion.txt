@@ -1,0 +1,3 @@
+Documentación de solución
+
+Este archivo fue creado en la rama bugfix/ramas-github.
