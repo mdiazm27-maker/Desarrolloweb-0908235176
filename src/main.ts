@@ -1,0 +1,1 @@
+import './ejercicio25.ts';

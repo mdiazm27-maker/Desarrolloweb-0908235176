@@ -1,0 +1,315 @@
+/* ESTILOS GENERALES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    color: #4a3f43;
+    line-height: 1.6;
+    background-color: #fffafb;
+}
+
+
+/* ENCABEZADO */
+
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #f3dce4;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    max-width: 1000px;
+    margin: auto;
+    padding: 18px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    color: #d46a8c;
+    font-size: 25px;
+    font-family: Georgia, serif;
+}
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #594c51;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #d46a8c;
+}
+
+
+
+/* SECCIÓN INICIO */
+
+.inicio {
+    min-height: 550px;
+
+    background-color: #fff0f5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 50px 25px;
+}
+
+.inicio > div {
+    max-width: 700px;
+}
+
+.saludo {
+    color: #d46a8c;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.inicio h2 {
+    font-family: Georgia, serif;
+    font-size: 50px;
+    margin: 10px 0;
+    color: #4a3f43;
+}
+
+.inicio h2 span {
+    color: #d46a8c;
+}
+
+.inicio h3 {
+    color: #7a6970;
+    font-size: 23px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.inicio p {
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+
+/* BOTÓN */
+
+.boton {
+    display: inline-block;
+
+    background-color: #d46a8c;
+    color: white;
+
+    padding: 11px 24px;
+    border-radius: 25px;
+
+    text-decoration: none;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background-color: #bd5577;
+    transform: translateY(-2px);
+}
+
+
+/* SECCIONES */
+
+.seccion {
+    max-width: 1000px;
+    margin: auto;
+    padding: 70px 25px;
+}
+
+.seccion h2 {
+    text-align: center;
+
+    font-family: Georgia, serif;
+    font-size: 34px;
+
+    margin-bottom: 35px;
+
+    color: #c45d7f;
+}
+
+.fondo-claro {
+    max-width: none;
+    background-color: #fff7f9;
+}
+
+
+
+/* SOBRE MÍ */
+
+.sobre-mi {
+    max-width: 750px;
+    margin: auto;
+}
+
+.sobre-mi p {
+    margin-bottom: 18px;
+    text-align: justify;
+}
+
+
+/* TARJETAS */
+
+.tarjetas {
+    max-width: 1000px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.tarjeta {
+    background-color: #ffffff;
+
+    padding: 28px;
+
+    border: 1px solid #f0d6df;
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 12px rgba(180, 100, 130, 0.10);
+
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+.icono {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.tarjeta h3 {
+    color: #d46a8c;
+    margin-bottom: 10px;
+}
+
+
+
+/* INTERESES */
+
+.intereses {
+    max-width: 800px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.interes {
+    padding: 22px;
+
+    background-color: #fff0f5;
+
+    border: 1px solid #f3d6e0;
+    border-radius: 15px;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.interes:hover {
+    transform: translateY(-3px);
+}
+
+.interes span {
+    font-size: 30px;
+}
+
+.interes p {
+    font-weight: 600;
+    margin-top: 8px;
+    color: #66565d;
+}
+
+/* DESPEDIDA */
+
+.despedida {
+    background-color: #fff0f5;
+
+    text-align: center;
+
+    padding: 60px 25px;
+}
+
+.despedida h2 {
+    font-family: Georgia, serif;
+    color: #d46a8c;
+    margin-bottom: 10px;
+}
+
+
+/* PIE DE PÁGINA */
+
+footer {
+    background-color: #594c51;
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+footer p {
+    margin: 4px;
+}
+
+
+/* DISEÑO PARA CELULARES */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .inicio h2 {
+        font-size: 38px;
+    }
+
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+
+    .intereses {
+        grid-template-columns: 1fr 1fr;
+    }
+}
