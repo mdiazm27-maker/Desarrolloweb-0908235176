@@ -1,3 +1,42 @@
-Documentación de solución Hotfix
+DOCUMENTACIÓN DE SOLUCIÓN - HOTFIX
 
-Este archivo fue creado en la rama hotfix/ramas-github.
+Este archivo documenta los pasos realizados para crear, publicar y sincronizar la rama hotfix/ramas-github.
+
+1. Regresar a la rama main
+
+git checkout main
+
+2. Crear la rama hotfix
+
+git checkout -b hotfix/ramas-github
+
+3. Publicar la rama en GitHub
+
+git push -u origin hotfix/ramas-github
+
+4. Crear el archivo DocumentacionSolucionhotfix.txt dentro de la carpeta RamasGitHub.
+
+5. Agregar el archivo para realizar el commit
+
+git add DocumentacionSolucionhotfix.txt
+
+6. Crear el commit
+
+git commit -m "Agregar documentacion en hotfix"
+
+7. Publicar los cambios de la rama
+
+git push
+
+8. Integrar los cambios de hotfix en main
+
+git checkout main
+git merge hotfix/ramas-github
+
+9. Publicar nuevamente main
+
+git push
+
+Resultado:
+
+La rama hotfix/ramas-github fue creada y publicada correctamente. El archivo DocumentacionSolucionhotfix.txt fue agregado mediante un commit y posteriormente sus cambios fueron integrados a la rama main.
